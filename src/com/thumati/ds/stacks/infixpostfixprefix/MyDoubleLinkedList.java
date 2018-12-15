@@ -1,11 +1,11 @@
 package com.thumati.ds.stacks.infixpostfixprefix;
 
 public class MyDoubleLinkedList<T> {
-	private Node<T> head;
-	private Node<T> tail;
+	private Node1<T> head;
+	private Node1<T> tail;
 	
 	public void insert(T data) {
-		Node<T> node = new Node<T>(data);
+		Node1<T> node = new Node1<T>(data);
 		if(isEmpty()) {
 			head=node;
 			tail=node;
