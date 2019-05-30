@@ -43,18 +43,18 @@ public class InsertionSort {
 	}*/
 
 	public static int[] insertionSort(int[] a) {
-		int i, j, min_value, n = a.length;
+		int i, j, key, n = a.length;
 		for (i = 1; i < n; ++i) {
-			min_value = a[i];
+			key = a[i];
 			j = i-1;
 			/* Move elements of arr[0..i-1], that are 
             greater than key, to one position ahead 
             of their current position */
-			while (j>=0 && a[j]>min_value) {
+			while (j>=0 && a[j]>key) {
 				a[j+1] = a[j];
 				j = j-1;
 			}
-			a[j+1] = min_value;
+			a[j+1] = key;
 		}
 		return a;
 	}
